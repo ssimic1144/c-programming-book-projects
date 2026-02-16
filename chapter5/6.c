@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void){
+    int i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11,i12;
+    int first_sum, second_sum, total;
+    int check_digit;
+
+    printf("Enter the UPC : ");
+    scanf("%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d%1d", &i1,&i2,&i3,&i4,&i5,&i6,&i7,&i8,&i9,&i10,&i11,&i12);
+
+    first_sum = i1 + i3 + i5 + i7 + i9 + i11;
+    second_sum = i2 + i4 + i6 + i8 + i10;
+
+    total = 3 * first_sum + second_sum;
+
+    check_digit = 9 - ((total - 1) % 10);
+
+    if (check_digit == i12){
+        printf("VALID\n");
+    } else {
+        printf("NOT VALID\n");    
+    }
+
+    return 0;
+}
