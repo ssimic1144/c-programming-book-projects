@@ -9,7 +9,7 @@ The book's ISBN-10 is : 0393979504
 
 If you're look at these example you probably know how to compile and run C program.
 
-You can do it like this with bash: 
+You can do it like this with GCC: 
 
 ```bash
 $ gcc X.c -o X
