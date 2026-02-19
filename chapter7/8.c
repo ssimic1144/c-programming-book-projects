@@ -1,15 +1,19 @@
 #include <stdio.h>
 
 int main(void){
-    
     int hours, minutes;
+    char pre, post;
 
-    printf("Enter a 24-hour time : ");
-    scanf("%d:%d", &hours, &minutes);
+    printf("Enter a 12-hour time : ");
+    scanf("%d:%d %c%c", &hours, &minutes, &pre, &post);
 
     int u_minutes_since_midnight;
 
-    u_minutes_since_midnight = hours * 60 + minutes;
+    if (pre == 'p' || pre == 'P'){
+        u_minutes_since_midnight = 12 * 60 + hours * 60 + minutes;
+    } else {
+        u_minutes_since_midnight = hours * 60 + minutes;
+    }
 
     int dep1, dep2, dep3, dep4, dep5, dep6, dep7, dep8;
 
