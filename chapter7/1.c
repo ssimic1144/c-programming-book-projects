@@ -12,7 +12,7 @@ int main(void){
     for (int i = 1; i <= n; i++){
         product = i*i;
         if (product < 0){
-            printf("The smallest value of n for int is %d\n", i);
+            printf("The smallest value of n that causes failure for int is %d\n", i);
             break;
         }
     }
@@ -21,7 +21,7 @@ int main(void){
     for (short i = 1; i <= n; i++){
         s_product = i*i;
         if (s_product < 0){
-            printf("The smallest value of n for short is %hd\n", i);
+            printf("The smallest value of n that causes failure for short is %hd\n", i);
             break;
         }
     }
@@ -30,7 +30,7 @@ int main(void){
     for (long i = 1; i <= n; i++){
         l_product = i*i;
         if (l_product < 0){
-            printf("The smallest value of n for long is %ld\n", i);
+            printf("The smallest value of n that causes failure for long is %ld\n", i);
             break;
         }
     }
