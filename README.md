@@ -13,3 +13,4 @@ You can do it like this with GCC:
 $ gcc X.c -o X
 ```
 
+Some examples use C99 syntax.
