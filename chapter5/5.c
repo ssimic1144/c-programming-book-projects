@@ -10,7 +10,7 @@ int main(void){
     float total_tax;
 
     if (income < 750){
-        total_tax = income + income * 0.01;
+        total_tax = income * 0.01;
     } else if (income < 2250){
         total_tax = 7.50f + 0.02 * income;
     } else if (income < 3750){
