@@ -14,3 +14,9 @@ $ gcc X.c -o X
 ```
 
 Some examples use C99 syntax.
+
+## Have you found a bug in the code ? 
+
+Feel free to tell me.
+I try to test my code but it's always possible that I miss something.
+
