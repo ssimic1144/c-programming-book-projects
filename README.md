@@ -13,6 +13,15 @@ You can do it like this with GCC:
 $ gcc X.c -o X
 ```
 
+Some chapters make use of `Makefile` to compile solutions to programming projects.
+
+`Makefile` contains all logic required to run the solution. 
+You can use `make` to compile those examples:
+
+```bash
+$ make Makefile
+```
+
 Some examples use C99 syntax.
 
 ## Have you found a bug in the code ? 
