@@ -19,7 +19,7 @@ Some chapters make use of `Makefile` to compile solutions to programming project
 You can use `make` to compile those examples:
 
 ```bash
-$ make Makefile
+$ make X
 ```
 
 Some examples use C99 syntax.
