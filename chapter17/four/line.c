@@ -23,6 +23,9 @@ void clear_line(void){
     while(cur != NULL){
         prev = cur;
         cur = cur->next;
+        //Word was allocated with calloc.
+        //We need to deallocated it also.
+        free(prev->word); 
         free(prev);
     }
 
